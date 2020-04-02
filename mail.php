@@ -38,7 +38,7 @@ include ('dbconn.php');
 		
 		if( mail($recipient, $name, $formcontent, $mailheader) == false ){
 			$data['error'] = 'Sorry, an error occured!';
-		}//else{
+		}else{
 			//$data['error'] = false;
 		}
 	
