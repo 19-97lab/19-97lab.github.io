@@ -1,6 +1,6 @@
 <?php
 
-include ('dbconn.php');
+
 	
 	/*
 		The Send Mail php Script for Contact Form
@@ -39,7 +39,7 @@ include ('dbconn.php');
 		if( mail($recipient, $name, $formcontent, $mailheader) == false ){
 			$data['error'] = 'Sorry, an error occured!';
 		}else{
-			//$data['error'] = false;
+			echo "Message sent successfully";
 		}
 	
 	}
