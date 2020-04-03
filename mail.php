@@ -39,7 +39,7 @@
 		if( mail($recipient, $name, $formcontent, $mailheader) == false ){
 			$data['error'] = 'Sorry, an error occured!';
 		}else{
-			echo "Message sent successfully";
+			$data['error'] = false;
 		}
 	
 	}
